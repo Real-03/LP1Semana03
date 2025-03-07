@@ -25,7 +25,7 @@ namespace ArrayMul
 
             foreach (float num in result)
             {
-                Console.WriteLine($"|_{num,7:F2}_|");
+                Console.WriteLine($"| {num,7:F2} |");
             }
         }
 
