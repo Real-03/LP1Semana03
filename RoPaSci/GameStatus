@@ -1,5 +1,5 @@
 
-namespace RoPaSci
+namespace GameStatus
 {
     public enum GameStatus
     {
