@@ -6,38 +6,24 @@ namespace RightSize
     {
         private static void Main(string[] args)
         {
-            string[] Words = new string[100];
-            string Text="";
-            int contador = 0;
-            Text = Console.ReadLine();
 
-            foreach (var word in Text)
+
+            foreach (var word in args)
             {
-                if(word == ' ')
-                {
-                    contador++;
-                }
-                else
-                {
-                    Words[contador]+= word;
-                }
-                
-            }
-            foreach (var item in Words)
-            {
-                if(item.Length<=3)
+                if(word.Length<=3)
                 {
                     
                 }
-                else if(item.Length>=8)
+                else if(word.Length>=8)
                 {
                     Console.WriteLine("[EARLY STOP]");
                     break;
                 }
                 else
                 {
-                    Console.WriteLine(item);
+                    Console.WriteLine(word);
                 }
+                
             }
         }
     }
